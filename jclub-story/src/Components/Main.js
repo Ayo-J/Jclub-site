@@ -9,8 +9,8 @@ const myobj = {
 }
 
 // eslint-disable-next-line no-unused-vars
-function Main(props){
-  console.log(props)
+function Main({name,what,id}){
+ 
 
  
 
@@ -19,14 +19,14 @@ function Main(props){
   return(
     <div className="Navbar"> 
     <ul>
-      <li>Home of {myobj.name}</li>
-      <li>About = {what}</li>
-      <li>Services</li>
-      <li>Contact</li>
+      <li>{name}</li>
+      <li>{what}</li>
+      <li>{id}</li>
+      
     
     </ul>
 
-    {props.children}
+
 
    
 
