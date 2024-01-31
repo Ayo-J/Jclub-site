@@ -1,0 +1,15 @@
+.Mainblock_container{
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(4 , 1fr);
+  grid-template-rows: auto;
+  gap:20px;
+}
+.Mainblock_container .img{
+  width: 10%;
+  height: 10%;
+  object-fit: contain;
+  display: flex;
+}
+
+   

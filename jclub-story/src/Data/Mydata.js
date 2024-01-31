@@ -1,29 +1,10 @@
-export const mydata =[  //this is the named export
+export const Mydata =[  //this is the named export
   {
-    name : "Awanthi",
-    what : "A japanese learning site",
+    name : "Panda",
+    what : "The red panda (Ailurus fulgens), also known as the lesser panda",
     id : 1,
   },
-  {
-    name : "Ayodya",
-    what : "A japanese learning site",
-    id : 2,
-  },
-  {
-    name : "Chintha",
-    what : "A japanese learning site",
-    id : 3,
-  },
-  {
-    name : "Palitha",
-    what : "A japanese learning site",
-    id : 1,
-  },
-  {
-    name : "Weerabahu",
-    what : "A japanese learning site",
-    id : 4,
-  },
+
   
  
 
