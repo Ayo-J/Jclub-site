@@ -1,5 +1,6 @@
 
 //import { Fragment } from 'react'; //this is jsx fragment
+import { useState } from 'react';
 import './App.css';
 import Main from './Components/Main';
 //import mydata from './Data/Mydata'; default export  
@@ -20,16 +21,27 @@ import {Mydata} from './Data/Mydata'; //named export
 //     )
 //   }
   
+
+
+
     
  
 function App() {
-  const Mainblock = Mydata.map(({name,what,id})=>{
-    return <Main key={id} name={name} what={what} id={id}/>
+
+  const [myVar,setmyVar] = useState('Ayodya')
+  
+
+
+  const clickhandle = ()=>{
+    setmyVar('Weerabahu')
+    
+    console.log(myVar);
+    
   }
-  );
+  
   return (
     <div className="App">
-      <h1>My first react app</h1>
+      <h1>{myVar}</h1>
     
 
 
@@ -38,13 +50,26 @@ function App() {
 
 
     <div className='Mainblock_container'>
-      {Mainblock}
+    
     <Main/>
-    <Main/>
-    <Main/>
-    <Main/>
+    
 
     </div>
+    <button style={ 
+      {
+        fontSize: '20px',
+        border: '2px solid black',
+        padding: '10px 20px',
+        borderRadius: '10px',
+      }
+     
+    
+
+
+    } 
+    onClick={clickhandle}
+    
+    className="btn">Read More</button>
 
     </div>
   );
