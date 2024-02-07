@@ -7,47 +7,6 @@ import Main from './Components/Main';
 
 import {Mydata} from './Data/Mydata'; //named export
 
-//export default can one time in a file but named export can be multiple times in a file
-
-//this is functional component
-//  const Newblock = ()=>{
-//     return(
-//       <Fragment>{ /*jsx fragment*/}
-//       {Mydata.map(({name,what,id})=>{
-//         return <Main key={id} name={name} what={what} id={id}/>
-//       }
-//       )}
-//       </Fragment>
-//     )
-//   }
-  
-
-
-
-    
- 
-function App() {
-
-  const [myVar,setmyVar] = useState('Ayodya')
-  
-
-
-  const clickhandle = ()=>{
-    setmyVar('Weerabahu')
-    
-    console.log(myVar);
-    
-  }
-  
-  return (
-    <div className="App">
-      <h1>{myVar}</h1>
-    
-
-
-
-      {/* <Newblock/> {this is the functional component using named export} */}
-
 
     <div className='Mainblock_container'>
     
